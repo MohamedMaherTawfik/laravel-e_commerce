@@ -16,8 +16,10 @@ return new class extends Migration
             $table->bigInteger('user_id')->references('id')->on('users');
             $table->string('address');
             $table->string('name');
+            $table->string('surname');
             $table->string('phone');
             $table->string('email');
+            $table->string('country');
             $table->timestamps();
             $table->softDeletes();
         });

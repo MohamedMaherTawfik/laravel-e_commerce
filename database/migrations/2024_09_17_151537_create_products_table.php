@@ -17,8 +17,9 @@ return new class extends Migration
             $table->longText('description');
             $table->string('image');
             $table->decimal('price',8,2)->nullable();
-            $table->integer('quantity');    
-            $table->foreign('categorey_id')->references('id')->on('categorey'); 
+            $table->decimal('discount_price',8,2)->nullable();
+            $table->bigInteger('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('categorey');
             $table->timestamps();
             $table->softDeletes();
         });
