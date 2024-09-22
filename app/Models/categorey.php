@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class categorey extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','image','parent_id'];
     protected $table = 'categorey';
+    protected $fillable = ['name','image','parent_id'];
 
     public function child(){
         return $this->hasMany(categorey::class,'parent_id');
