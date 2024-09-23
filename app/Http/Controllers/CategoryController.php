@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\categorey;
 
+
 class CategoryController extends Controller
 {
     protected $category;
@@ -23,7 +24,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -31,7 +32,8 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->category->create ($request->all());
+        return redirect()->back();
     }
 
     /**
