@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Categorey; // Ensure this line is correct and the Category model exists in the specified namespace
+use App\Models\categorey;
 
 class CategoryController extends Controller
 {
     protected $category;
     public function __construct()
     {
-        $this->category = new Categorey();
+        $this->category = new categorey();
     }
     public function index()
     {
-        $response['categorey'] = $this->category->all();
+        $response['categories'] = $this->category->all();
         return view('page.categorey.index')->with($response);
     }
 
