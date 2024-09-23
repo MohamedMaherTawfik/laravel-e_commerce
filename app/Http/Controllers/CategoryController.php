@@ -24,7 +24,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**
@@ -32,7 +32,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $this->category->create ($request->all());
+        $this->category->create($request->all());
         return redirect()->back();
     }
 

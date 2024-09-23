@@ -60,7 +60,7 @@
         <nav class="sidebar">
             <ul>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Categorey</a></li>
+                <li><a href="pages\categorey\index.blad.php">Categorey</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Logout</a></li>
